@@ -1,0 +1,109 @@
+.productsHeading {
+    margin: 2vmax auto;
+    width: 15vmax;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.164);
+    padding: 2vmax;
+    font: 500 2vmax 'Roboto';
+    text-align: center;
+}
+
+.products {
+    min-height: 30vh;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 5vmax;
+    justify-content: center;
+}
+
+.paginationBox {
+    display: flex;
+    justify-content: center;
+    margin: 6vmax;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+.page-item {
+    background-color: rgb(255, 255, 255);
+    list-style: none;
+    border: 1px solid rgba(0, 0, 0, 0.158);
+    padding: 1vmax 1.5vmax;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.page-item:first-child {
+    border-radius: 5px 0 0 5px;
+}
+
+.page-item:last-child {
+    border-radius: 0 5px 5px 0;
+}
+
+.page-link {
+    text-decoration: none;
+    font: 300 1vmax 'Roboto';
+    color: gray;
+    transition: all 0.3s;
+}
+
+.page-item:hover {
+    background-color: gainsboro;
+    color: rgb(0, 0, 0);
+}
+
+.pageItemActive{
+    background-color: tomato;
+}
+
+.pageLinkAtive{
+    color: white;
+}
+
+.filterBox{
+    width: 10vmax;
+    position: absolute;
+    top: 10vmax;
+    left: 2vmax;
+}
+
+.categoryBox{
+    padding: 0px;
+}
+
+.category-link{
+    list-style: none;
+    color: rgba(0, 0, 0, 0.371);
+    font: 400 1vmax 'Roboto';
+    margin: 0.4vmax;
+    cursor: pointer;
+    transition: all 0.5s; 
+}
+
+.category-link:hover{
+    color: tomato;
+}
+
+.filterBox > fieldset{
+    border: 1px solid rgba(0, 0, 0, 0.37);
+}
+@media screen and (max-width : 1280px) {
+    .filterBox{
+        width: 20vmax;
+        position: static;
+        margin: auto;
+    }
+
+    .page-link {
+        font: 300 2vmax 'Roboto';
+    }
+    
+    .category-link{
+        font: 400 2vmax 'Roboto';
+    }
+    
+}
